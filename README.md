@@ -1,7 +1,7 @@
 # Python-Say
  Python script to leverage Pico2Wave or Google TTS (from Google Translate) to convert text to speech.
  
- ##Pico2Wave:
+ ## Pico2Wave:
  
  The Pico Text-to-Speech (TTS) service uses the TTS binary from SVOX for producing spoken text.
 
@@ -9,21 +9,21 @@
 
  sudo apt-get install libttspico-utils
  
- ##Google TTS (from Google Translate):
+ ## Google TTS (from Google Translate):
  
  Sends a request to Google Translate and plays the returned audio using the mpg123 package, install it with apt-get:
  
  sudo apt-get install mpg123
  
- ##Usage:
+ ## Usage:
  
     Args:
         text: The text you want to speak.
         lang: The language to use. Supported languages are:
             en-US, en-GB, de-DE, es-ES, fr-FR, it-IT.
-		engine: Options are:
-			gtts, pico
-		Only for Pico2Wave from here onwards
+        engine: Options are:
+            gtts, pico
+        Only for Pico2Wave from here onwards
         volume: Volume level for the converted audio. The normal volume level is
             100. Valid volume levels are between 0 (no audible output) and 500 (increasing the
             volume by a factor of 5). Values higher than 100 might result in degraded signal
